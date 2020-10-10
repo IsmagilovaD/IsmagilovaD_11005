@@ -12,14 +12,15 @@ public class GluingArrays {
         for (int i = arr1.length; i < result.length; i++){
             result[i]=arr2[i- arr1.length];
         }
-        for (int i = 0; i < result.length; i++){
-            System.out.printf("%2d", result[i]);
-        }
         return result;
-    }
+        }
+
     public static void main(String[] args) {
 	int[] arr1 = {1, 3, 5, 7};
 	int[] arr2 = {1, 2, 4, 6};
 	int[] arr12 = gluingArrays(arr1, arr2);
+        for (int i = 0; i < arr12.length; i++){
+            System.out.printf("%3d", arr12[i]);
+    }
     }
 }
